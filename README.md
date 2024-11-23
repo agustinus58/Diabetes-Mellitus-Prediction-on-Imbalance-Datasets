@@ -5,7 +5,7 @@
 
 ***
 
-## Dataset BRFSS Diabetes 2015
+## 1. Dataset BRFSS Diabetes 2015
 
 ***
 ### Dataset Descriptions
@@ -96,7 +96,7 @@
 
 
 
-## 1. Dataset Pima
+## 2. Dataset Pima
 
 ***
 ### Dataset Descriptions
