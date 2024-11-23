@@ -94,8 +94,4 @@
 |                  |                      | Subsample           | 0.8         | 0.8         | 0.8         | 0.9         |
 |                  |                      | colsample_bytree    | 1           | 0.9         | 0.9         | 1.0         |
 
-### Data Preprocessing
 
-
-#### Resampling Methods
-- ![Alt text](Images/BRFSS2015/SMOTE_BRFSS2015.png)
