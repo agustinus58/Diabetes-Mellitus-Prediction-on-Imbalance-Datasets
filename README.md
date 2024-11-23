@@ -66,11 +66,7 @@
 | DATASET          | MODEL               | PARAMETER NAME      | BEST VALUE                           |
 |------------------|---------------------|---------------------|--------------------------------------|
 |                  |                     |                     | Imbalance Data | SMOTE | SMOTE-ENN | SMOTE-Tomeks |
-| BRFSS2015        | Logistic Regression  | Penalty             | L1          | L2          | L1          | L2          |
-|                  |                      | C                   | 0.1         | 0.1         | 0.1         | 0.1         |
-|                  |                      | Solver              | liblinear   | Newton-cg   | liblinear   | Newton-cg   |
-|                  |                      | class_weight        | None        | None        | None        | Balanced    |
-|                  | KNN                  | n_neighbors         | 9           | 3           | 3           | 3           |
+| BRFSS2015        | KNN                  | n_neighbors         | 9           | 3           | 3           | 3           |
 |                  |                      | Weights             | Uniform     | Distance    | Distance    | Distance    |
 |                  |                      | Algorithm           | Ball_tree   | Ball_tree   | kd_tree     | Auto        |
 |                  |                      | leaf_size           | 20          | 10          | 20          | 10          |
