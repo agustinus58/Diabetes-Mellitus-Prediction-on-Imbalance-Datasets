@@ -60,3 +60,40 @@
 | Age                   | 14267.0 | 8.205019  | 3.006551  | 1.0  | 6.0   | 9.0   | 10.0  | 13.0 |
 | Education             | 14267.0 | 4.991659  | 0.997192  | 1.0  | 4.0   | 5.0   | 6.0   | 6.0  |
 | Income                | 14267.0 | 5.849232  | 2.138429  | 1.0  | 4.0   | 6.0   | 8.0   | 8.0  |
+
+#### Best Parameter for Hyperparameter Tuning
+*Table 3. Best Parameters from Hyperparameter Tuning for the BRFSS2015 Dataset*
+| DATASET          | MODEL               | PARAMETER NAME      | BEST VALUE                           |
+|------------------|---------------------|---------------------|--------------------------------------|
+|                  |                     |                     | Imbalance Data | SMOTE | SMOTE-ENN | SMOTE-Tomeks |
+| BRFSS2015        | Logistic Regression  | Penalty             | L1          | L2          | L1          | L2          |
+|                  |                      | C                   | 0.1         | 0.1         | 0.1         | 0.1         |
+|                  |                      | Solver              | liblinear   | Newton-cg   | liblinear   | Newton-cg   |
+|                  |                      | class_weight        | None        | None        | None        | Balanced    |
+|                  | KNN                  | n_neighbors         | 9           | 3           | 3           | 3           |
+|                  |                      | Weights             | Uniform     | Distance    | Distance    | Distance    |
+|                  |                      | Algorithm           | Ball_tree   | Ball_tree   | kd_tree     | Auto        |
+|                  |                      | leaf_size           | 20          | 10          | 20          | 10          |
+|                  |                      | p                   | 2           | 1           | 1           | 1           |
+|                  | Random Forest        | n_estimators        | 50          | 100         | 200         | 100         |
+|                  |                      | max_depth           | 10          | None        | 30          | None        |
+|                  |                      | min_samples_split    | 2           | 5           | 2           | 5           |
+|                  |                      | min_samples_leaf     | 1           | 1           | 1           | 2           |
+|                  |                      | max_features        | sqrt        | sqrt        | sqrt        | sqrt        |
+|                  |                      | Bootstrap           | False       | True        | False       | False       |
+|                  | SVM                  | C                   | 100         | 100         | 100         | 10          |
+|                  |                      | Kernel              | rbf         | rbf         | rbf         | rbf         |
+|                  |                      | Gamma               | Scale       | Auto        | Auto        | Auto        |
+|                  |                      | class_weight        | None        | None        | None        | None        |
+|                  | Gradient Boosting    | n_estimators        | 100         | 200         | 200         | 100         |
+|                  |                      | learning_rate       | 0.1         | 0.1         | 0.1         | 0.1         |
+|                  |                      | max_depth           | 3           | 5           | 6           | 6           |
+|                  |                      | min_samples_split    | 10          | 2           | 5           | 2           |
+|                  |                      | min_samples_leaf     | 2           | 4           | 1           | 1           |
+|                  |                      | Subsample           | 1           | 1           | 1           | 0.8         |
+|                  |                      | max_features        | sqrt        | sqrt        | sqrt        | sqrt        |
+|                  | XG Boosting          | n_estimators        | 100         | 300         | 300         | 300         |
+|                  |                      | learning_rate       | 0.05        | 0.1         | 0.1         | 0.05        |
+|                  |                      | max_depth           | 4           | 3           | 5           | 5           |
+|                  |                      | Subsample           | 0.8         | 0.8         | 0.8         | 0.9         |
+|                  |                      | colsample_bytree    | 1           | 0.9         | 0.9         | 1.0         |
