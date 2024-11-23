@@ -126,3 +126,36 @@
 | DiabetesPedigreeFunction   | 768.0 | 0.471876  | 0.331329  | 0.078 | 0.24375| 0.3725  | 0.62625 | 2.42   |
 | Age                       | 768.0 | 33.240885 | 11.760232 | 21.000| 24.00000| 29.0000 | 41.00000| 81.00  |
 | Outcome                   | 768.0 | 0.348958  | 0.476951  | 0.000 | 0.00000|         |         |        |
+
+#### Best Parameter for Hyperparameter Tuning
+*Table 3. Best Parameters from Hyperparameter Tuning for the Pima Indian Dataset*
+| DATASET          | MODEL               | PARAMETER NAME      | BEST VALUE                           |
+|------------------|---------------------|---------------------|--------------------------------------|
+|                  |                     |                     | Imbalance Data | SMOTE | SMOTE-ENN | SMOTE-Tomeks |
+|PIMA Indian       | KNN                  | n_neighbors         | 3           | 7           | 3           | 3           |
+|                  |                      | Weights             | Distance    | Distance    | Distance    | Distance    |
+|                  |                      | Algorithm           | Auto        | Auto        | Auto        | Auto        |
+|                  |                      | leaf_size           | 10          | 10          | 10          | 10          |
+|                  |                      | p                   | 2           | 2           | 1           | 1           |
+|                  | Random Forest        | n_estimators        | 100         | 100         | 50          | 20          |
+|                  |                      | max_depth           | None        | None        | None        | None        |
+|                  |                      | min_samples_split   | 5           | 2           | 5           | 2           |
+|                  |                      | min_samples_leaf    | 2           | 1           | 1           | 1           |
+|                  |                      | max_features        | sqrt        | log2        | sqrt        | log2        |
+|                  |                      | Bootstrap           | False       | False       | True        | False       |
+|                  | SVM                  | C                   | 0.01        | 100         | 10          | 100         |
+|                  |                      | Kernel              | Linear      | rbf         | Linear      | rbf         |
+|                  |                      | Gamma               | Scale       | Scale       | Scale       | Scale       |
+|                  |                      | class_weight        | Balanced    | None        | None        | None        |
+|                  | Gradient Boosting    | n_estimators        | 50          | 100         | 50          | 50          |
+|                  |                      | learning_rate       | 0.2         | 0.2         | 0.2         | 0.2         |
+|                  |                      | max_depth           | 6           | 6           | 5           | 5           |
+|                  |                      | min_samples_split   | 5           | 10          | 2           | 2           |
+|                  |                      | min_samples_leaf    | 1           | 1           | 2           | 1           |
+|                  |                      | Subsample           | 0.8         | 1           | 0.6         | 1           |
+|                  |                      | max_features        | log2        | sqrt        | sqrt        | log2        |
+|                  | XG Boosting          | n_estimators        | 100         | 200         | 200         | 300         |
+|                  |                      | learning_rate       | 0.1         | 0.1         | 0.05        | 0.05        |
+|                  |                      | max_depth           | 3           | 5           | 4           | 3           |
+|                  |                      | Subsample           | 0.8         | 1           | 1           | 1           |
+|                  |                      | colsample_bytree    | 0.8         | 1           | 0.8         | 1           |
