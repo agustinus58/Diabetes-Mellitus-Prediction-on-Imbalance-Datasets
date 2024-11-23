@@ -95,3 +95,34 @@
 |                  |                      | colsample_bytree    | 1           | 0.9         | 0.9         | 1.0         |
 
 
+
+## 1. Dataset Pima
+
+***
+### Dataset Descriptions
+*Table 1. Pima Indians Dataset Atribut Descriptions*
+| No. | Attribute                  | Description                                       | Measurement | Value Range  |
+|-----|----------------------------|---------------------------------------------------|-------------|--------------|
+| 1   | Pregnancies                 | How many times a person became pregnant           | Years       | 0 to 17      |
+| 2   | Glucose                     | Plasma glucose level after 2 h                    | mg/dL       | 0 to 199     |
+| 3   | Blood Pressure              | Pressure of an individual's blood pressure        | mmHg        | 0 to 122     |
+| 4   | Skin Thickness              | The triceps fold thickness                        | mm          | 0 to 99      |
+| 5   | Insulin                     | Patient's blood insulin levels                    | μU/mL       | 0 to 846     |
+| 6   | BMI                         | Body mass index                                   | kg/m²       | 0 to 67      |
+| 7   | Diabetes Pedigree Function  | Indicates the hereditary risk of diabetes         | -           | 0 to 2.45    |
+| 8   | Age                         | Age of the individual                             | Years       | 21 to 81     |
+| 9   | Outcome                     | Class attribute (1 = diabetic, 0 = non-diabetic)  | -           | 0 or 1       |
+
+
+*Table 2. Pima Indians Dataset Descriptive Feature*
+| Feature                  | Count | Mean      | Std Dev   | Min   | 25%     | 50%     | 75%     | Max    |
+|--------------------------|-------|-----------|-----------|-------|---------|---------|---------|--------|
+| Pregnancies               | 768.0 | 3.845052  | 3.369578  | 0.000 | 1.00000 | 3.0000  | 6.00000 | 17.00  |
+| Glucose                   | 768.0 | 120.894531| 31.972618 | 0.000 | 99.00000| 117.0000| 140.25000| 199.00 |
+| BloodPressure             | 768.0 | 69.105469 | 19.355807 | 0.000 | 62.00000| 72.0000 | 80.00000| 122.00 |
+| SkinThickness             | 768.0 | 20.536458 | 15.952218 | 0.000 | 0.00000| 23.0000 | 32.00000| 99.00  |
+| Insulin                   | 768.0 | 79.799479 | 115.244002| 0.000 | 0.00000| 30.5000 | 127.25000| 846.00 |
+| BMI                       | 768.0 | 31.992578 | 7.884160  | 0.000 | 27.30000| 32.0000 | 36.60000| 67.10  |
+| DiabetesPedigreeFunction   | 768.0 | 0.471876  | 0.331329  | 0.078 | 0.24375| 0.3725  | 0.62625 | 2.42   |
+| Age                       | 768.0 | 33.240885 | 11.760232 | 21.000| 24.00000| 29.0000 | 41.00000| 81.00  |
+| Outcome                   | 768.0 | 0.348958  | 0.476951  | 0.000 | 0.00000|         |         |        |
